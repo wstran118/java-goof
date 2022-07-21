@@ -250,9 +250,9 @@ public class AccountAction extends BaseAction {
         return !changePasswordForm.getNewPassword().equals(changePasswordForm.getConfirmationPassword());
     }
 
-    private boolean incorrectCurrentPassword(User user) {
+    /* private boolean incorrectCurrentPassword(User user) {
         return !changePasswordForm.getCurrentPassword().equals(user.getPassword());
-    }
+    }*/
 
     private void validateChangePasswordForm() {
         validateCurrentPassword();
